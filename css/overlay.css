@@ -1,0 +1,58 @@
+/* ============= Div Caption Overlay ============= */
+
+.pre-caption{
+    position:relative;
+    float: left;
+    width:100%;
+}
+.pre-caption img{
+    width:100%;
+    height:auto;
+}
+.pre-caption:hover .caption-overlay{
+    opacity:1;
+}
+.caption-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+}
+.caption-overlay .hover-text{
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    width: 75%;
+}
+
+.hover-text-icon{
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    right: 10%;
+}
+
+.caption-overlay .hover-text i{
+    color:#223d61;
+    font-size: 40px;
+}
+.caption-overlay .hover-text h2{
+    color:#fff;
+    font-size:1.125rem;
+    margin-bottom: 0px;
+}
+.caption-overlay .hover-text p{
+    color:#fff;
+    font-size:1.5rem;
+}
+
+
+.videoclip      {   color:orange;
+                    text-shadow: 2px 2px 5px red;
+                    margin-bottom: 0px !important;}
+
+.vcborder       {   border-bottom:5px solid orange;}

@@ -1,0 +1,295 @@
+/* ===== [Defaults] ===== */
+
+body        {font-family:'Montserrat',sans-serif;}
+img         {max-width:100%; max-height:100%; display:block; margin:auto;}
+h1, h2, h3  {font-family:'fightthisregular',sans-serif;}
+
+a       {color:#fff;
+        text-decoration: none!important;
+        cursor:pointer;}
+
+a:hover {color:#988575;
+        text-shadow: 2px 2px 3px #444;}
+
+h1 {text-align:center; 
+    font-size:80px;
+    color:#ededed; 
+    text-transform:uppercase; 
+    text-shadow: 2px 2px 5px orange;
+    margin-top:6vh; margin-bottom:-1.5vh;}
+
+h2 {text-align:center; 
+    font-size:6vh; 
+    color:#ededed; 
+    text-shadow: 1px 1px 4px #988575;
+    padding:25px 0px;}
+
+    .h2-right {text-align:right!important;
+              padding-right:8vh!important;
+              color:#757575!important;
+              text-shadow: 1px 1px 4px #757575 !important;}
+            
+    .h2-left  {text-align:left!important;
+              padding-left:8vh!important;}
+
+h3 {text-align:right; 
+    font-size:40px}
+
+.nopad  {padding:0px 0px;}
+
+.pointer {cursor: pointer;}
+
+.navbar-brand.scrolled {font-size:2.5rem!important;  transition: all 0.3s; max-width: 20vh}
+
+.navbar.scrolled {
+  background-color: rgba(0,0,0,0.8) !important;
+  padding:0.7rem;
+  font-size:1rem !important;
+  transition: all 0.3s;}
+
+a.navbar-shadow {text-shadow: 1px 1px 4px black;} /* a.navbar-shadow:hover »» @bootstrap.css:4517 */
+ 
+img.navlogo {width: 0%; margin: 0px 0px 0px 20px}
+
+img.navlogo.scrolled {width:25%;}
+
+.nav-brand-size { font-size:0px;
+                  font-family: 'fightthisregular';
+                  line-height: 1;}
+
+@font-face {font-family: 'fightthisregular';
+            src: url('../webfonts/fight-webfont.woff2') format('woff2'),
+                 url('../webfonts/fight-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;}
+
+.q1 {border-top-left-radius:25px;}
+.q2 {border-top-right-radius:25px;}
+.q3 {border-bottom-right-radius:25px;}
+.q4 {border-bottom-left-radius:25px;}
+
+/* ===== [HOME] ===== */
+
+#homevid {min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);}
+
+.home {height: 100vh;
+		  width: 100%;
+		  overflow: hidden;
+		  position: relative;}
+
+img.biglogo {width:65%;
+            padding:30vh 0vh;}
+
+  /* = [Social Icons] = */
+
+  .home-social {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    bottom: 4rem;
+    right: 10%;
+    z-index: 500}
+
+  .home-social li {
+    position: relative;
+    padding: .6rem 0;}
+
+  .home-social li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;}
+
+  .home-social i {
+    position: absolute;
+    display: inline-block;
+    font-size: 3vh;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    right: 0;
+    top: 0;
+    text-shadow: 1px 1px 4px black;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+
+/* ===== [AUDIO] ===== */
+
+#audio {background-color: #232323;
+				background-image:url(../img/bg1.png);
+        padding-bottom:5vh;}
+
+p.player-artist, 
+p.player-track, 
+p.player-tags {color:#fff; 
+                margin-bottom:0px;}
+
+p.player-artist  {font-family: 'fightthisregular';
+                font-size:40px !important;
+                margin-bottom:5px !important;
+                padding-top: 10px;}
+
+p.player-track {font-size:20px;}
+
+p.player-tags {color:#D76C0D!important;
+              font-size:15px!important;}
+
+p.player-links {color:#fff;
+                margin-top:5px;
+                font-size:30px !important;}
+
+p.player-links a {-webkit-transition: 
+                  all 0.2s ease-in-out;
+                  transition: all 0.2s ease-in-out;}
+
+p.player-links a:hover {color:#f2ba4e;}               
+
+i.player-links {padding: 0px 5px !important;
+                margin-bottom: 0px;}
+
+.playnow {background-color:transparent;
+          padding: 7px;
+          border-radius: 5px;
+          color:#FFF!important;}
+
+.playnow:hover, 
+.playnow:focus {background-color:#D76C0D!important;
+                border-radius: 5px;
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;}
+
+.playnow:active {background-color:#f2ba4e!important;
+                -webkit-transition: all 0.1s ease-in-out;
+                transition: all 0.1s ease-in-out;}
+
+.artist-q1 {background-image: url('../player/crew2.jpg'); background-size:cover;}
+.artist-q2 {background-image: url('../player/shocks2.jpg'); background-size:cover;}
+.artist-q3 {background-image: url('../player/darosa2.jpg'); background-size:cover;}
+.artist-q4 {background-image: url('../player/braino2.jpg'); background-size:cover;}
+
+.divgif-left{display: none;
+        position:absolute;
+        bottom:10%;
+        left:-10%;
+        filter:invert(1);}
+
+.divgif-right{display: none;
+        position:absolute;
+        bottom:10%;
+        right:-10%;
+        filter:invert(1);}
+
+.divgif-left img,
+.divgif-right img {max-width: 30%;}
+
+i.insta-left {padding-left:5px;font-size:23px;}
+i.insta-right {padding-right:5px;font-size:23px;}
+
+.insta-left {text-align:right;
+            font-family:'Montserrat';
+            font-size:14px;
+            color:#f2ba4e;
+          	text-shadow:1px 1px 3px black;}
+
+.insta-right {text-align:left;
+            font-family:'Montserrat';
+            font-size:14px;
+            color:#f2ba4e;
+          	text-shadow:1px 1px 3px black;}
+
+/* ===== [MUSIC VIDEO / CORPORATE] ===== */
+
+.mvideo-pad{padding:25px 0px;}
+
+.h2-active,
+.h2-idle:hover {font-size:6vh; 
+                color:#ededed; 
+                text-shadow: 1px 1px 4px #988575;
+                padding:40px 10px;
+                font-family:'fightthisregular',sans-serif;
+                -webkit-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;}
+
+.h2-idle {font-size:3.5vh; 
+          color:transparent; 
+          text-shadow: 1px 1px 3px #777;
+          padding:40px 0px;
+          font-family:'fightthisregular',sans-serif;}
+
+  /* = [slides ] = */
+
+  p.portfolio {text-align: right;
+  					   margin-bottom:-1vh;}
+
+  p.title     {font-size:22px !important;}
+  p.subtitle  {font-size:15px !important;}
+
+    /* = [slide 1] = */
+
+    .slide1 {background-color: #000;
+    		background-image:url(../img/bg2.png);
+        min-height: 80vh;
+        padding-top:2vh;} 
+
+    .videoclip {color:orange;
+                text-shadow: 2px 2px 5px red;
+                margin-bottom: 0px !important;}
+    .vcborder     {border-bottom:5px solid orange;}
+
+    /* = [slide 2] = */
+
+    .slide2 {background-color: #fff;
+    				background-image:url(../img/bg2.png);
+            min-height: 80vh;
+            padding-top:3vh;}   
+
+    .corporate {color:pink;
+                text-shadow: 2px 2px 5px purple;
+                margin-bottom: 0px !important;}
+
+    .corpborder   {border-bottom:5px solid pink;}
+
+    .promo      {color:white;
+                text-shadow: 2px 2px 5px gray;
+                margin-bottom: 0px !important;}
+
+    .promoborder  {border-bottom:5px solid white;}
+
+/* ===== [FOOTER] ===== */
+
+footer {
+  padding: 35px 0px 15px 0px;
+  margin-left:-20px;
+  background: rgba(0, 0, 0, 1);
+  color: #FFFFFF;
+  background-image: url('../img/bg1.png');
+  font-size:15px;
+}
+
+.footer a {
+  color: #988575;
+  opacity: 0.75;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  opacity: 1;
+  text-shadow: 2px 2px 3px #444;
+}
+
+.footimg    {max-height:10vh;}
+.foot-left  {margin-left:-20px;}
+.foot-right {font-size:14px;}
+
+i.footsocial  {font-size:3vh;
+              margin-top:-4px;
+              margin-bottom: 5px;
+              padding:0px 2px;}
